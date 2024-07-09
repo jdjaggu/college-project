@@ -1,0 +1,296 @@
+.liner {
+    height: 3px;
+    width: 60%;
+    background-color: black;
+}
+
+.line-mid {
+    height: 600px;
+    width: 2px;
+    background-color: rgba(0, 0, 0, 0.453);
+}
+
+
+#product-page {
+
+    .container {
+        margin-top: 150px;
+        max-width: 60%;
+    }
+
+    .flex {
+        display: flex;
+        flex-direction: row;
+        gap: 50px;
+    }
+
+    .prod-image {
+        position: sticky;
+        top: 5%;
+    }
+
+    .left {
+        margin-bottom: 150px;
+        height: 80vh;
+        width: 150vw;
+
+        img {
+            height: 100%;
+            width: 100%;
+        }
+
+    }
+
+    .right {
+
+        .heading {
+            font-size: 3rem;
+            font-weight: bold;
+        }
+
+        .price {
+            .price-gg {
+                font-size: 2rem;
+            }
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .btnss {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                .box {
+                    height: 30px;
+                    width: 60px;
+                    border: 2px solid black;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+
+                .plus {
+                    border-radius: 9px 0px 0px 9px;
+                }
+
+                .minus {
+                    border-radius: 0px 9px 9px 0px;
+
+                }
+            }
+        }
+
+
+        .order-cart {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            margin: 30px 0px;
+            gap: 30px;
+
+            button {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 50px;
+                width: 140px;
+                border: 3px solid black;
+                border-radius: 10px;
+                background-color: $nav-color;
+
+                &:hover {
+                    background-color: rgba(15, 9, 9, 0.627);
+                    transition: 0.5s ease;
+                    color: wheat;
+                }
+            }
+
+            .fa-heart {
+                font-size: 30px;
+                color: rgb(0, 0, 0);
+
+                &:hover {
+                    transition: 0.5s ease;
+                    color: rgb(216, 23, 23);
+                }
+            }
+
+        }
+
+
+        .p {
+            p {
+                text-align: justify;
+                text-justify: inter-word;
+                text-align-last: left;
+
+                font-size: 1.2rem;
+            }
+        }
+
+        ul {
+            li {
+                margin-left: 20px;
+                font-size: 1.2rem;
+
+            }
+        }
+
+        .reviews {
+
+            margin-top: 2vh;
+
+            .no-reviews {
+                font-size: 1.6rem;
+            }
+
+            .cust-rev {
+                .bot-rev {
+                    font-size: 1.3rem;
+                    margin-top: 30px;
+                    text-align: justify;
+                    text-justify: inter-word;
+                    text-align-last: left;
+                }
+
+
+                .top-rev {
+
+                    margin-top: 40px;
+
+                    display: flex;
+                    align-items: flex-start;
+                    justify-content: flex-start;
+                    gap: 50px;
+
+                    .left-pic {
+                        height: 60px;
+                        width: 60px;
+                        margin-left: 25px;
+                        margin-right: -10px;
+                        align-self: center;
+                        background-color: rgba(0, 0, 0, 0.516);
+                        border-radius: 50%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+
+
+                        .fa-user {
+                            color: rgb(255, 255, 255);
+                            font-size: 26px;
+                        }
+                    }
+
+                    .right-side {
+                        p {
+                            font-size: 1.5rem;
+
+                        }
+
+                        .stars {
+                            font-size: 1.5rem;
+
+                        }
+                    }
+
+
+                }
+
+            }
+        }
+    }
+
+
+    .likes {
+        margin-bottom: 150px;
+
+        .container {
+
+            width: 80%;
+
+            .may-like {
+                display: grid;
+                align-items: center;
+                justify-content: space-between;
+                grid-template-columns: 5fr 1fr 2fr;
+
+                .line-mid {
+                    height: 100%;
+                    width: 2px;
+                    background-color: rgba(0, 0, 0, 0.453);
+                }
+
+                .bot-flex {
+                    h1 {
+                        color: black;
+                    }
+                }
+
+                .left-header {
+                    display: flex;
+                    align-items: flex-start;
+                    justify-content: space-around;
+                    flex-direction: column;
+
+                    h1 {
+                        font-size: 3.6rem;
+                    }
+
+                    .liner {
+                        height: 3px;
+                        width: 60%;
+                        background-color: black;
+                    }
+
+                }
+
+                .right-side {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 2rem;
+                    height: auto;
+                    width: auto;
+                    padding: 20px 40px;
+                    align-self: center;
+
+                    .py-2 {
+                        width: 15vw;
+                        height: auto;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        width: 250px;
+
+                        .like-img {
+                            img {
+                                width: 100%;
+                            }
+                        }
+
+                        .leftt {
+                            h1 {
+                                font-size: 1.6rem;
+                            }
+
+                            p {
+                                font-size: 0.9rem;
+
+                            }
+                        }
+
+
+
+                    }
+                }
+
+
+            }
+        }
+    }
+
+
+}

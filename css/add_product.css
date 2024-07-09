@@ -1,0 +1,367 @@
+.trader-container {
+  margin-top: 10vh;
+  margin-bottom: 5vh;
+}
+
+.customer-container {
+  margin: 5vh 0 3vh 0;
+}
+
+.container2 {
+  height: auto;
+  padding-top: 220px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.5rem;
+  background-color: aliceblue;
+  padding-bottom: 30px;
+}
+
+.container2 h2 {
+  font-size: 1.7rem;
+  margin: -40px;
+  text-align: center;
+}
+
+.container2 .box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 900px;
+  padding: 20px;
+  padding-top: 60px;
+  margin-top: -30px;
+  -webkit-box-shadow: -1px 1px 6px -1px rgba(0, 0, 0, 0.75);
+          box-shadow: -1px 1px 6px -1px rgba(0, 0, 0, 0.75);
+}
+
+.container2 .box .top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.container2 .box .top .left,
+.container2 .box .top .right {
+  position: relative;
+  margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  padding: 10px 20px;
+  font-size: 1.5rem;
+}
+
+.container2 .box .top .left .msg,
+.container2 .box .top .right .msg {
+  color: red;
+  font-size: 1rem;
+}
+
+.container2 .box .top .left .username-msg,
+.container2 .box .top .right .username-msg {
+  position: absolute;
+  top: 6rem;
+}
+
+.container2 .box .top .left .pass-msg,
+.container2 .box .top .right .pass-msg {
+  position: absolute;
+  top: 6rem;
+}
+
+.container2 .box .top .left .cpass-msg,
+.container2 .box .top .right .cpass-msg {
+  position: absolute;
+  top: 13.5rem;
+}
+
+.container2 .box .top .left .email-msg,
+.container2 .box .top .right .email-msg {
+  position: absolute;
+  top: 13.5rem;
+}
+
+.container2 .box .top .left .fname-msg,
+.container2 .box .top .right .fname-msg {
+  position: absolute;
+  top: 21rem;
+}
+
+.container2 .box .top .left .lname-msg,
+.container2 .box .top .right .lname-msg {
+  position: absolute;
+  top: 21rem;
+}
+
+.container2 .box .top .left .phone-msg,
+.container2 .box .top .right .phone-msg {
+  position: absolute;
+  top: 28.5rem;
+}
+
+.container2 .box .top .left .address-msg,
+.container2 .box .top .right .address-msg {
+  position: absolute;
+  top: 28.5rem;
+}
+
+.container2 .box .top .left input,
+.container2 .box .top .right input {
+  margin: 10px 0px;
+  height: 2.5rem;
+  width: 100%;
+  border: 1px solid black;
+  border-radius: 10px;
+  font-size: 1.4rem;
+  padding: 0 10px 0 10px;
+}
+
+.container2 .box .bot {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0px 20px;
+}
+
+.container2 .box .bot input {
+  margin: 10px 0px;
+  height: 2.5rem;
+  width: 100%;
+  border: 1px solid black;
+  border-radius: 10px;
+  font-size: 1.5rem;
+}
+
+.container2 .box .bot .gen {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 500px;
+  padding-bottom: 1rem;
+}
+
+.container2 .box .bot .gen .msg {
+  color: red;
+  font-size: 1rem;
+}
+
+.container2 .box .bot .gen .gender-msg {
+  position: absolute;
+  top: 11rem;
+}
+
+.container2 .box .bot .dob {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  font-size: 1.5rem;
+}
+
+.container2 .box .bot .dob textarea {
+  margin: 10px 0px;
+  padding: 5px, 10px;
+  height: 10rem;
+  width: 100%;
+  border: 1px solid black;
+  border-radius: 10px;
+  font-size: 1.5rem;
+  resize: none;
+}
+
+.container2 .box .bot .dob .ainfo-msg {
+  position: absolute;
+  top: 13rem;
+}
+
+.container2 .box .bot .dob input {
+  padding: 0 10px 0 10px;
+}
+
+.container2 .box .bot .dob .msg {
+  color: red;
+  font-size: 1rem;
+}
+
+.container2 .box .bot .dob .dob-msg {
+  position: absolute;
+  top: 5.5rem;
+}
+
+.container2 .box .bot .dob1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  font-size: 1.5rem;
+}
+
+.container2 .box .bot .dob1 textarea {
+  margin: 10px 0px;
+  padding: 5px, 10px;
+  height: 10rem;
+  width: 100%;
+  border: 1px solid black;
+  border-radius: 10px;
+  font-size: 1.5rem;
+  resize: none;
+}
+
+.container2 .box .bot .dob1 .msg {
+  color: red;
+  font-size: 1rem;
+}
+
+.container2 .box .bot .dob1 .gender-msg {
+  position: absolute;
+  top: 12rem;
+}
+
+.container2 .box .bot .dob1 .pinfo-msg {
+  position: absolute;
+  top: 28rem;
+}
+
+.container2 .box .bot .shop-dropdown {
+  margin: 1rem 0;
+  padding: 1rem;
+}
+
+.container2 .box .bot .shop-dropdown select {
+  background-color: transparent;
+  color: #fff;
+  font-size: 1rem;
+  letter-spacing: 1px;
+}
+
+.container2 .box .bot .shop-dropdown select option {
+  background-color: rgba(0, 0, 0, 0.5);
+  font-size: 1rem;
+  letter-spacing: 1px;
+}
+
+.container2 .box .bot .tc {
+  margin: 10px -20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  width: 700px;
+  font-size: 1.5rem;
+  padding-bottom: 1rem;
+}
+
+.container2 .box .bot .tc input {
+  margin-left: 10px;
+  width: 3.5rem;
+  height: 2rem;
+}
+
+.container2 .box .bot .tc .msg {
+  color: red;
+  font-size: 1rem;
+}
+
+.container2 .box .bot .tc .terms-msg {
+  position: absolute;
+  top: 16rem;
+  padding-left: 1.3rem;
+}
+
+.container2 .box .bot .sub {
+  font-size: 30px;
+  height: 55px;
+  width: 30%;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  background-color: aliceblue;
+  color: #000;
+  cursor: pointer;
+  -webkit-box-shadow: -1px 1px 5px -1px rgba(0, 0, 0, 0.75);
+          box-shadow: -1px 1px 5px -1px rgba(0, 0, 0, 0.75);
+}
+
+.container2 .box .bot .sub:hover {
+  color: aliceblue;
+  background-color: blue;
+}
+
+.trader-email-verification {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  font-size: 1.3rem;
+  width: 300px;
+}
+/*# sourceMappingURL=add_product.css.map */

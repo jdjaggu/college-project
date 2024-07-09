@@ -1,0 +1,120 @@
+.profile-nav {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: $nav-color;
+
+    color: rgb(0, 0, 0);
+    height: 5rem;
+    padding: 3vh 2vw;
+
+    .profile {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+
+        gap: 10px;
+
+        .fa-user {
+            font-size: 35px;
+        }
+
+        .name-email {
+
+            h6,
+            p {
+                margin-bottom: 0px;
+            }
+
+            display: flex;
+            align-items: flex-start;
+            flex-direction: column;
+            justify-content: center;
+        }
+    }
+
+
+
+    .sid-nav {
+        height: auto;
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+        gap: 30px;
+
+
+        .logo-text {
+            p {
+                font-size: 2.0rem;
+                margin-bottom: 0px;
+                font-weight: 500;
+            }
+        }
+
+        .menu {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+    }
+
+    .profile {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .sidenav {
+
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        color: #fff;
+        background-color: rgba(17, 17, 17, 0.933);
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+
+        a {
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            font-size: 25px;
+            color: #ffff;
+            display: block;
+            transition: 0.3s;
+
+            &:hover {
+                color: $nav-color;
+            }
+
+        }
+
+        .closebtn {
+            position: absolute;
+            top: 0;
+            right: 25px;
+            font-size: 36px;
+            margin-left: 50px;
+        }
+    }
+
+
+
+}
+
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+
+    .sidenav a {
+        font-size: 18px;
+    }
+}

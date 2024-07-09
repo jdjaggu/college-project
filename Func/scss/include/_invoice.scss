@@ -1,0 +1,210 @@
+@import './colors';
+
+.whole-invoice-container {
+    //position: relative;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.5rem;
+    background-color: $body-color;
+
+
+    .invoice-container {
+        width: 70rem;
+        margin: 25vh 0 10vh 0;
+
+
+        .invoice-top {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin-bottom: 3rem;
+
+            .invoice-left {
+                display: flex;
+                flex-direction: column;
+
+                h1 {
+                    font-size: 2rem;
+                    font-weight: bold;
+                }
+
+                h2 {
+                    font-size: 1.5rem;
+                    font-weight: bold;
+                }
+
+                h3 {
+                    font-size: 1.5rem;
+                    font-weight: normal;
+                }
+            }
+
+            .invoice-right {
+
+                h1 {
+                    font-size: 2rem;
+                    font-weight: bold;
+                    padding-bottom: 3.7rem;
+                }
+
+                .invoice-heading {
+                    letter-spacing: 1rem;
+                }
+
+                h3 {
+                    font-size: 1.5rem;
+                    font-weight: normal;
+                }
+
+                .invoice-row {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                }
+
+            }
+        }
+
+        .invoice-table {
+            position: relative;
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 7.5rem;
+            border-left: 1px solid #ddd;
+            border-right: 1px solid #ddd;
+
+
+
+            thead {
+                background-color: $nav-color;
+
+                th {
+                    font-size: 1.5rem;
+                    padding: 1rem 4.5rem;
+                    text-align: center;
+                    color: #fff;
+                }
+            }
+
+            tbody {
+
+                td {
+                    font-size: 1.5rem;
+                    padding: 2rem 4.5rem;
+                    text-align: center;
+                    border-bottom: 1px solid #ddd;
+                }
+            }
+
+            &::after {
+                content: '';
+                display: block;
+                position: absolute;
+                height: 3px;
+                width: 100%;
+                bottom: -4rem;
+                background-color: rgba(0, 0, 0, .3);
+            }
+        }
+
+        .invoice-mid {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin-bottom: 5rem;
+
+
+            .invoice-left {
+                display: flex;
+                flex-direction: column;
+
+                h2 {
+                    font-size: 1.5rem;
+                    font-weight: bold;
+                    padding-bottom: 2rem;
+                }
+
+                h3 {
+                    font-size: 1.5rem;
+                    font-weight: normal;
+                }
+            }
+
+            .invoice-right {
+                display: flex;
+                flex-direction: column;
+                border: 1px solid #ddd;
+                padding: 3rem;
+
+
+                h2 {
+                    font-size: 1.5rem;
+                    font-weight: bold;
+                }
+
+                h3 {
+                    font-size: 1.5rem;
+                    font-weight: normal;
+                }
+
+                .sales {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    padding: 0.5rem 2.5rem;
+
+
+
+                    .right-col {
+                        padding-right: 5rem;
+                    }
+                }
+
+                .total {
+                    position: relative;
+                    margin-top: 2rem;
+                    background-color: $nav-color;
+                    color: #fff;
+
+                }
+            }
+
+        }
+
+        .invoice-bottom {
+            position: relative;
+            display: flex;
+            flex-direction: row;
+            gap: 350px;
+
+
+            .invoice-left {
+                display: flex;
+                flex-direction: column;
+                padding-right: 5rem;
+
+                h3 {
+                    padding-bottom: 1rem;
+                }
+
+                p {
+                    text-align: left;
+                    text-align: justify;
+                }
+
+            }
+
+            .invoice-right {
+                display: flex;
+                flex-direction: column;
+
+                h3 {
+                    font-size: 1.5rem;
+                    padding-top: 1rem;
+                }
+            }
+        }
+    }
+}

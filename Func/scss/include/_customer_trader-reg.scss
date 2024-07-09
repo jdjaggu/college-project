@@ -1,0 +1,296 @@
+@import './_colors.scss';
+
+.trader-container {
+    margin-top: 10vh;
+    margin-bottom: 5vh;
+}
+
+.customer-container {
+    margin: 5vh 0 3vh 0;
+}
+
+.container2 {
+    height: auto;
+    padding-top: 220px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.5rem;
+    background-color: $body-color;
+    padding-bottom: 30px;
+
+    h2 {
+        font-size: 1.7rem;
+        margin: -40px;
+        text-align: center;
+    }
+
+    .box {
+        display: flex;
+        flex-direction: column;
+        width: 900px;
+        padding: 20px;
+        padding-top: 60px;
+        margin-top: -30px;
+
+        box-shadow: -1px 1px 6px -1px rgba(0, 0, 0, 0.75);
+
+        .top {
+            display: flex;
+            flex-direction: row;
+
+            .left,
+            .right {
+                position: relative;
+                margin-top: 50px;
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                padding: 10px 20px;
+                font-size: 1.5rem;
+
+                .msg {
+                    color: red;
+                    font-size: 1rem;
+                }
+
+                .username-msg {
+                    position: absolute;
+                    top: 6rem;
+                }
+
+                .pass-msg {
+                    position: absolute;
+                    top: 6rem;
+                }
+
+                .cpass-msg {
+                    position: absolute;
+                    top: 13.5rem;
+                }
+
+                .email-msg {
+                    position: absolute;
+                    top: 13.5rem;
+                }
+
+                .fname-msg {
+                    position: absolute;
+                    top: 21rem;
+                }
+
+                .lname-msg {
+                    position: absolute;
+                    top: 21rem;
+                }
+
+                .phone-msg {
+                    position: absolute;
+                    top: 28.5rem;
+                }
+
+                .address-msg {
+                    position: absolute;
+                    top: 28.5rem;
+                }
+
+                input {
+                    margin: 10px 0px;
+                    height: 2.5rem;
+                    width: 100%;
+                    border: 1px solid black;
+                    border-radius: 10px;
+                    font-size: 1.4rem;
+                    padding: 0 10px 0 10px;
+                }
+            }
+
+
+        }
+
+        .bot {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            padding: 0px 20px;
+
+
+            input {
+                margin: 10px 0px;
+                height: 2.5rem;
+                width: 100%;
+                border: 1px solid black;
+                border-radius: 10px;
+                font-size: 1.5rem;
+            }
+
+            .gen {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+                width: 500px;
+                padding-bottom: 1rem;
+
+                .msg {
+                    color: red;
+                    font-size: 1rem;
+                }
+
+                .gender-msg {
+                    position: absolute;
+                    top: 11rem;
+                }
+            }
+
+
+
+            .dob {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: space-between;
+                width: 100%;
+                font-size: 1.5rem;
+
+                textarea {
+                    margin: 10px 0px;
+                    padding: 5px, 10px;
+                    height: 10rem;
+                    width: 100%;
+                    border: 1px solid black;
+                    border-radius: 10px;
+                    font-size: 1.5rem;
+                    resize: none;
+                }
+
+                .ainfo-msg {
+                    position: absolute;
+                    top: 13rem;
+                }
+
+                input {
+                    padding: 0 10px 0 10px;
+                }
+
+                .msg {
+                    color: red;
+                    font-size: 1rem;
+                }
+
+                .dob-msg {
+                    position: absolute;
+                    top: 5.5rem;
+                }
+            }
+
+            .dob1 {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: space-between;
+                width: 100%;
+                font-size: 1.5rem;
+
+
+                textarea {
+                    margin: 10px 0px;
+                    padding: 5px, 10px;
+                    height: 10rem;
+                    width: 100%;
+                    border: 1px solid black;
+                    border-radius: 10px;
+                    font-size: 1.5rem;
+                    resize: none;
+                }
+
+                .msg {
+                    color: red;
+                    font-size: 1rem;
+                }
+
+                .gender-msg {
+                    position: absolute;
+                    top: 12rem;
+                }
+
+                .pinfo-msg {
+                    position: absolute;
+                    top: 28rem;
+                }
+            }
+
+            .shop-dropdown {
+                margin: 1rem 0;
+                padding: 1rem;
+
+                select {
+                    background-color: transparent;
+                    color: #fff;
+                    font-size: 1rem;
+                    letter-spacing: 1px;
+
+                    option {
+                        background-color: rgba(0, 0, 0, .5);
+                        font-size: 1rem;
+                        letter-spacing: 1px;
+                        // border: none;
+                    }
+                }
+            }
+
+            .tc {
+
+                margin: 10px -20px;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: flex-start;
+                width: 700px;
+                font-size: 1.5rem;
+                padding-bottom: 1rem;
+
+                input {
+                    margin-left: 10px;
+                    width: 3.5rem;
+                    height: 2rem;
+                }
+
+                .msg {
+                    color: red;
+                    font-size: 1rem;
+                }
+
+                .terms-msg {
+                    position: absolute;
+                    top: 16rem;
+                    padding-left: 1.3rem;
+                }
+            }
+
+            .sub {
+                font-size: 30px;
+                height: 55px;
+                width: 30%;
+                align-self: center;
+                background-color: $body-color;
+                color: #000;
+                cursor: pointer;
+                box-shadow: -1px 1px 5px -1px rgba(0, 0, 0, 0.75);
+
+                &:hover {
+                    color: $body-color;
+                    background-color: $nav-color;
+                }
+            }
+
+        }
+    }
+}
+
+.trader-email-verification {
+    display: flex;
+    flex-direction: row;
+    font-size: 1.3rem;
+    width: 300px;
+}

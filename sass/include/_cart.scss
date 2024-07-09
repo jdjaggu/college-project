@@ -1,0 +1,190 @@
+#cart-page {
+
+    margin-top: 20vh;
+
+    .likes {
+        margin-bottom: 150px;
+
+        .container {
+
+            width: 90%;
+
+            .may-like {
+                display: grid;
+                align-items: center;
+                justify-content: space-between;
+                grid-template-columns: 5fr 1fr 2fr;
+
+                .line-mid {
+                    height: 100%;
+                    width: 2px;
+                    background-color: rgba(0, 0, 0, 0.453);
+                }
+
+                .bot-flex {
+                    h1 {
+                        color: black;
+                    }
+                }
+
+                .left-header {
+                    display: flex;
+                    align-items: flex-start;
+                    justify-content: space-around;
+                    flex-direction: column;
+
+                    h1 {
+                        font-size: 3.6rem;
+                    }
+
+                    .liner {
+                        height: 3px;
+                        width: 20%;
+                        background-color: black;
+                    }
+
+                }
+
+                .right-side {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 2rem;
+                    height: auto;
+                    width: auto;
+                    padding: 20px 40px;
+                    align-self: center;
+
+                    .cart-product {
+                        display: grid;
+                        align-items: center;
+                        justify-content: space-between;
+                        grid-template-columns: 2fr 5fr 2fr;
+                        height: 10vh;
+
+                        img {
+                            margin-right: 1vw;
+                            height: 90%;
+                            width: 100px;
+
+                        }
+
+
+
+                        .price-etc {
+                            width: 13vw;
+
+                            .liner {
+                                height: 1px;
+                                width: 50%;
+                                background-color: black;
+                            }
+
+
+                            h1 {
+                                font-size: 1.3rem;
+                            }
+
+                            p {
+                                margin-top: 1vh;
+                                font-size: 1.3rem;
+                                font-weight: 500;
+                            }
+                        }
+
+                        .qty {
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-around;
+                            gap: 20px;
+
+                            input {
+                                height: 2rem;
+                                width: 5rem;
+                                padding: 10px 10px;
+                            }
+
+                            form {
+                                button {
+                                    padding: 10px 20px;
+                                }
+                            }
+
+                        }
+
+                        .wishlist {
+                            button {
+                                padding: 10px 20px;
+                                font-size: 20px;
+                                background-color: rgba(0, 0, 0, 0.721);
+                                color: rgb(255, 255, 255);
+                                border: 2px solid rgb(0, 0, 0);
+                                width: 150px;
+
+                                &:hover {
+                                    background-color: rgba(0, 255, 242, 0.721);
+                                    color: rgb(0, 0, 0);
+                                    transition: 0.3s ease-in-out;
+                                }
+                            }
+                        }
+                    }
+
+
+                    .update-cart {
+                        display: flex;
+                        align-self: flex-start;
+                        align-items: center;
+                        gap: 30px;
+
+                        .fa-arrow-rotate-right {
+                            font-size: 3vh;
+                        }
+
+                        button {
+                            padding: 10px 20px;
+                            font-size: 20px;
+                            background-color: $nav-color;
+                            border: 2px solid black;
+
+                            &:hover {
+                                background-color: rgba(43, 221, 197, 0.721);
+                                transition: 0.3s ease-in-out;
+                            }
+                        }
+                    }
+
+                    .ckout {
+                        display: flex;
+                        align-self: flex-start;
+                        align-items: center;
+
+                        button {
+                            padding: 10px 20px;
+                            font-size: 20px;
+                            background-color: rgba(0, 0, 0, 0.721);
+                            color: rgb(255, 255, 255);
+                            border: 2px solid rgb(0, 0, 0);
+
+
+                            &:hover {
+                                background-color: rgba(255, 255, 255, 0.721);
+                                color: rgb(0, 0, 0);
+                                transition: 0.3s ease-in-out;
+                            }
+                        }
+
+
+
+                    }
+
+                }
+
+
+            }
+        }
+    }
+
+
+}

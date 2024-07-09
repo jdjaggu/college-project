@@ -1,0 +1,33 @@
+.text-one {
+
+    max-width: 60vw;
+
+    .abt-layout {
+        margin: 50px 0px;
+
+        .left-about,
+        .right-about {
+            padding: 10px 40px;
+        }
+    }
+
+    p {
+        text-align: justify;
+        font-size: 25px;
+    }
+}
+
+.abt {
+    margin-top: 80px;
+}
+
+.logo-img {
+    margin: 50px 0px;
+    height: 500px;
+    width: 500px;
+
+    img {
+        height: 100%;
+        width: 100%;
+    }
+}

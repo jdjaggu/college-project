@@ -1,0 +1,316 @@
+#checkout {
+
+    margin-top: 20vh;
+    height: 80vh;
+    max-height: auto;
+
+    .likes {
+        margin-bottom: 150px;
+
+        .container {
+
+            width: 90%;
+
+            .payment {
+                margin-top: 60px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+
+                .btn-pay-btn {
+                    height: 100px;
+                    width: 200px;
+                    padding: 10px 20px;
+
+                    .btn-pay {
+                        height: 100%;
+                        width: 100%;
+                    }
+
+                    &:hover {
+                        background-color: rgba(25, 25, 207, 0.572);
+                        transition: 0.3s ease-in-out;
+                    }
+                }
+            }
+
+            .may-like {
+                display: grid;
+                align-items: center;
+                justify-content: space-between;
+                grid-template-columns: 5fr 1fr 2fr;
+
+                .line-mid {
+                    justify-self: center;
+                    height: 100%;
+                    width: 2px;
+                    background-color: rgba(0, 0, 0, 0.453);
+                }
+
+                .bot-flex {
+                    h1 {
+                        color: black;
+                    }
+                }
+
+                .left-header {
+                    display: flex;
+                    align-items: flex-start;
+                    justify-content: space-around;
+                    flex-direction: column;
+                    flex-direction: column;
+
+                    .col-slots {
+
+                        h3 {
+                            margin-top: 30px;
+                            margin-bottom: 20px;
+                        }
+
+                        .radio {
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-between;
+                            border-radius: 15px;
+                        }
+
+                        .radio__input {
+                            display: none;
+                        }
+
+                        .radio__label {
+                            padding: 12px 30px;
+                            font-size: 1.4rem;
+                            font-family: sans-serif;
+                            color: rgb(0, 0, 0);
+                            background-color: aliceblue;
+                            box-shadow: 0 0 5px rgb(152, 138, 167);
+
+                            cursor: pointer;
+                            transition: background 0.1s ease-in-out;
+                        }
+
+                        .radio__label:not(:last-of-type) {
+                            border-radius: 1px solid yellow;
+                        }
+
+                        .radio__input:checked+.radio__label {
+                            background-color: $nav-color;
+                        }
+
+                        .time-radio {
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-between;
+                            border-radius: 15px;
+                            gap: 20px;
+
+                            .time-radio__input {
+                                display: none;
+                            }
+
+                            .time-radio__label {
+                                padding: 12px 30px;
+                                font-size: 1.4rem;
+                                font-family: sans-serif;
+                                color: rgb(0, 0, 0);
+                                background-color: aliceblue;
+                                box-shadow: 0 0 5px rgb(152, 138, 167);
+
+
+                                cursor: pointer;
+                                transition: background 0.1s ease-in-out;
+                            }
+
+                            .time-radio__label:not(:last-of-type) {
+                                border-radius: 1px solid yellow;
+                            }
+
+                            .time-radio__input:checked+.time-radio__label {
+                                background-color: $nav-color;
+                            }
+                        }
+
+
+                    }
+
+                    h1 {
+                        font-size: 3.6rem;
+                    }
+
+                    .liner {
+                        height: 3px;
+                        width: 20%;
+                        background-color: black;
+                    }
+
+                    .ck-form {
+                        display: flex;
+                        align-items: center;
+                        justify-content: flex-start;
+                        height: 10vh;
+                        width: 100%;
+
+                        input {
+                            height: 50px;
+                            width: 85%;
+                            padding: 15px 20px;
+                            border: 2px solid black;
+                            font-size: 100%;
+                            letter-spacing: 1.8 px;
+                            border-radius: 10px;
+                            background-color: transparent;
+                        }
+
+                        .fa-envelope,
+                        .fa-phone {
+                            font-size: 30px;
+                            margin-right: 30px;
+                        }
+                    }
+                }
+
+                .right-side {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 2rem;
+                    height: auto;
+                    width: auto;
+                    padding: 20px 40px;
+                    align-self: center;
+
+                    .total-cost {
+                        width: 100%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                    }
+
+                    .cart-product {
+                        display: grid;
+                        align-items: center;
+                        justify-content: space-between;
+                        grid-template-columns: 2fr 5fr 2fr;
+                        height: 10vh;
+
+                        img {
+                            margin-right: 1vw;
+                            height: 90%;
+                            width: 100px;
+
+                        }
+
+
+
+                        .price-etc {
+                            width: 13vw;
+
+                            .liner {
+                                height: 1px;
+                                width: 50%;
+                                background-color: black;
+                            }
+
+
+                            h1 {
+                                font-size: 1.3rem;
+                            }
+
+                            p {
+                                margin-top: 1vh;
+                                font-size: 1.3rem;
+                                font-weight: 500;
+                            }
+                        }
+
+                        .qty {
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-around;
+                            gap: 20px;
+
+                            input {
+                                height: 2rem;
+                                width: 5rem;
+                                padding: 10px 10px;
+                            }
+                        }
+
+                        .wishlist {
+                            button {
+                                padding: 10px 20px;
+                                font-size: 20px;
+                                background-color: rgba(0, 0, 0, 0.721);
+                                color: rgb(255, 255, 255);
+                                border: 2px solid rgb(0, 0, 0);
+                                width: 150px;
+
+                                &:hover {
+                                    background-color: rgba(0, 255, 242, 0.721);
+                                    color: rgb(0, 0, 0);
+                                    transition: 0.3s ease-in-out;
+                                }
+                            }
+                        }
+                    }
+
+
+                    .update-cart {
+                        display: flex;
+                        align-self: flex-start;
+                        align-items: center;
+                        gap: 30px;
+
+                        .fa-arrow-rotate-right {
+                            font-size: 3vh;
+                        }
+
+                        button {
+                            padding: 10px 20px;
+                            font-size: 20px;
+                            background-color: $nav-color;
+                            border: 2px solid black;
+
+                            &:hover {
+                                background-color: rgba(43, 221, 197, 0.721);
+                                transition: 0.3s ease-in-out;
+                            }
+                        }
+                    }
+
+                    .ckout {
+                        display: flex;
+                        align-self: flex-start;
+                        align-items: center;
+
+                        button {
+                            padding: 10px 20px;
+                            font-size: 20px;
+                            background-color: rgba(0, 0, 0, 0.721);
+                            color: rgb(255, 255, 255);
+                            border: 2px solid rgb(0, 0, 0);
+
+
+                            &:hover {
+                                background-color: rgba(255, 255, 255, 0.721);
+                                color: rgb(0, 0, 0);
+                                transition: 0.3s ease-in-out;
+                            }
+                        }
+
+
+
+                    }
+
+                }
+
+
+            }
+        }
+    }
+
+
+}
